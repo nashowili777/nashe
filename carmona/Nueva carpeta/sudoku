@@ -1,0 +1,42 @@
+window.onload = function() {
+    const cells = document.getElementsByTagName('input');
+
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].addEventListener('input', validateInput);
+    }
+}
+
+function validateInput(event) {
+    const value = event.target.value;
+    const isValid = /^[1-9]?$/.test(value);
+
+    if (!isValid) {
+        event.target.value = '';
+        showMessage('Por favor, ingrese un valor válido (1-9)');
+    } else {
+        checkBoard();
+    }
+}
+
+function checkBoard() {
+    const cells = document.getElementsByTagName('input');
+    const values = Array.from(cells).map(cell => parseInt(cell.value) || 0);
+
+    const isValid = validateSudoku(values);
+
+    if (isValid) {
+        showMessage('¡Felicidades, has resuelto el Sudoku!');
+    } else {
+        showMessage('Hay valores incorrectos en el tablero.');
+    }
+}
+
+function validateSudoku(values) {
+    // Aquí puedes implementar tu lógica para validar si el Sudoku está resuelto correctamente
+    return true;
+}
+
+function showMessage(message) {
+    const messagesDiv = document.getElementById('messages');
+    messagesDiv.textContent = message;
+}

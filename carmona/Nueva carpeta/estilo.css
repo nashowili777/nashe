@@ -1,0 +1,177 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    transition:0.5s;
+}
+
+.header-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header-text h2 {
+    font-size: 24px;
+    color: #ccc;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+}
+
+.experience,
+.education {
+    margin-bottom: 20px;
+}
+
+.experience-header,
+.education h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience-header h4,
+.education h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.experience-header span,
+.education span {
+    font-size: 14px;
+    color: #000000;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color:white;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color:white;
+}
+
+.contact-info li i {
+    margin-right: 10px;
+    color:white;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+a {
+    color:white; 
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+
+.profile-pic:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+section:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+.contact-info i:hover {
+    color: #007bff;
+section {
+    border-radius: 10px; /* Agrega bordes redondeados a las secciones */
+    overflow: hidden; /* Oculta cualquier contenido que se salga de los bordes redondeados */
+}
+#bg-video {
+      position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+.container {
+            position: relative;
+            z-index: 1;
+            color: white; /* Cambia el color del texto para que sea legible sobre el video */
+        }          
